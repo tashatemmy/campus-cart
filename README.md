@@ -13,7 +13,7 @@ Campus vendors often manage sales manually using notebooks, spreadsheets, calcul
 - Reduce calculation errors
 - Manage transactions quickly during busy periods
 
-CampusCart addresses these challenges and offers simple and affordable pricing for campus vendors. Campuscart provides a simple CLI-based workflow for managing products, processing customer carts, calculating totals and generating receipts
+CampusCart addresses offers simple business processes such as managing products, processing customer carts, calculating totals and generating receipts
 
 ## Target Audience
 
