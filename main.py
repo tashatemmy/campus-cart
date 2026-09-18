@@ -43,3 +43,6 @@ inventory = {
 		"stock": 25
 	}
 }
+
+# cart processes
+cart = []
