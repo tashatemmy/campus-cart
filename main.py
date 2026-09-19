@@ -8,14 +8,55 @@ Program Scope: inventory management, update cart total, receipt generation.
 
 """
 
-#login and select an option area
-login_details = input("Dear user, enter your username to login to your account: ").strip().
+#Functions for campuscart processes
+def display_catalog():
+	print("displaying catalog...")
+def add_to_cart():
+	print("Adding item to cart")
+def view_cart():
+	print("view your cart")
+
+#login user
+login_details = input("Dear user, enter your username to login to your account: ").strip()
 if login_details in  ["Temi","Titi","Tayo"]:
 	print(f"Welcome {login_details}, to CampusCart")
 else:
 	print("you need to signup to use campuscart")
-user_option = int(input("Select an option: ").strip())
-print(f"{login_details}, you selected option: {user_option}")
+
+#campus cart main cli execution
+while True:
+	print("  +----------------------------------+")
+	print("  |          CAMPUSCART              |")
+	print("  |    Campus Vendor POS CLI         |")
+	print("  +----------------------------------+")
+	print("  1. View Catalog")
+	print("  2. Add Product (business account only)")
+	print("  3. Update Stock (business account only)")
+	print("  4. Add to Cart")
+	print("  5. View Cart")
+	print("  6. Generate Receipt")
+	print("  7. Exit")
+
+	user_option = input("Select an option: ").strip().lower()
+
+	if user_option == "1":
+		display_catalog()
+	elif user_option == "2":
+		add_product()
+	elif user_option == "3":
+		update_stock()
+	elif user_option == "4":
+		add_to_cart()
+	elif user_option == "5":
+		view_cart()
+	elif user_option == "6":
+		generate_receipt()
+	elif user_option == "7":
+		print("You are now exiting CampusCart, See you again soon!")
+		break
+	else:
+		print("Invalid option. Please try again")
+	
 
 # Inventory Catalog
 inventory = {
