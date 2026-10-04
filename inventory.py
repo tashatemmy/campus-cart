@@ -31,7 +31,7 @@ def update_stock(inventory, items_id, quantity):
 	return True
 
 def calc_price_quote(item, quantity, tax_rate=0, discount_rate=0):
-	"""Calculate subtotal, discount, tax and final price"
+	"""Calculate subtotal, discount, tax and final price"""
 
 	if quantity <= 0:
 		return None
